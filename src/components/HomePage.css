@@ -1,6 +1,4 @@
-/* .redBox{
-    border: red 1px solid;
-} */
+
 
 body{
     background-color: #e5e6e5;
@@ -16,15 +14,10 @@ body{
     color: black;
 }
 
-.uploadbtndiv{
+.uploadbtndiv, .fileLabeldiv, .selectfilebtndiv, .loaderDiv{
     display: flex;
     justify-content: center;
-    margin: 3vh 0;
-}
-
-.fileLabeldiv{
-    display: flex;
-    justify-content: center;
+    align-items: center;
     margin: 3vh 0;
 }
 
@@ -45,20 +38,11 @@ body{
     cursor: pointer;
     outline: none;
 }
-.uploadbtn:hover{
+.uploadbtn:hover, .selectfilebtn:hover{
     background-color: #378d39;
 }
-.uploadbtn:active{
+.uploadbtn:active, .selectfilebtn:active{
     background-color: #286629;
-}
-
-
-
-
-.selectfilebtndiv{
-    display: flex;
-    justify-content: center;
-    margin: 3vh 0;
 }
 
 .selectfilebtn{
@@ -73,22 +57,9 @@ body{
     cursor: pointer;
     outline: none;
 }
-.selectfilebtn:hover{
-    background-color: #378d39;
-}
-.selectfilebtn:active{
-    background-color: #286629;
-}
 
-.loaderDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3vh 0;
-}
-
+  /* Styling for Picture when loaded */
 .pictureDiv {
-    /* background-color: rgb(147, 147, 255); */
     min-height: 90vh;
     max-height: 90vh;
     padding: 20px;
@@ -122,6 +93,7 @@ body{
     max-width: 100%;
   }
 
+  /* disable buttons when loading */
  .disabledbtn, .disabledbtn:hover, .disabledbtn:active{
     background-color: grey;
 }
