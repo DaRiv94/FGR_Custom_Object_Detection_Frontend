@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Backdrop from '@material-ui/core/Backdrop';
 import axios from 'axios';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./HomePage.css"
-import Loader from "react-loader-spinner";
+import BeatLoader from "react-spinners/BeatLoader";
 
 export class HomePage extends Component {
     constructor(props) {
@@ -52,7 +51,7 @@ export class HomePage extends Component {
                 message: "Please upload a file with the following extension jpg,jpeg,png,bmp"
             });
         }
-        
+
         this.setState({ loading: true })
         if (tryupload) {
             try {
@@ -87,8 +86,11 @@ export class HomePage extends Component {
                 </div>
 
                 <div className="uploadbtndiv">
-                    {this.state.selectedFile && <button className={!this.state.loading ? "uploadbtn" : "uploadbtn disabledbtn"}
-                        onClick={this.fileUploadHandler} >Upload</button>}
+                    {this.state.selectedFile &&
+                        <button className={!this.state.loading ? "uploadbtn" : "uploadbtn disabledbtn"}
+                            onClick={this.fileUploadHandler}
+                            disabled={this.state.loading}
+                        >Upload</button>}
                 </div>
 
                 <div className="selectfilebtndiv ">
@@ -100,7 +102,7 @@ export class HomePage extends Component {
                 </div>
 
                 { this.state.loading && <div className="loaderDiv" >
-                    <Loader type="ThreeDots" color="#48b749" height={90} width={90} />
+                    <BeatLoader color="#48b749" loading={this.state.loading} size={90} />
                 </div>}
 
                 <input
