@@ -39,7 +39,7 @@ export class HomePage extends Component {
 
 
     async fileUploadHandler() {
-        let backendUploadUrl = "https://fgr-license-plate-backend.azurewebsites.net/image"
+        let backendUploadUrl = "https://fgr-custom-vision-license-plate-detector.azurewebsites.net/image"
         let tryupload = false;
 
         //Check The file type again for safe measure
