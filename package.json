@@ -1,5 +1,5 @@
 {
-  "name": "objectdetector",
+  "name": "fgr-custom-vision-license-plate-detector-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
