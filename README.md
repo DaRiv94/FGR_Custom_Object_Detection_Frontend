@@ -3,7 +3,6 @@ FGR Custom Vision License Plate Detector FRONTEND
 
 This is the frontend UI app to display the functionality of the FGR Custom Vision License Plate Detector.
 
----
 **TODO(UPDATE LINK HERE)**
 Learn More about my FGR Custom Vision License Plate Detector [here](https://frankieriviera.com)
 
